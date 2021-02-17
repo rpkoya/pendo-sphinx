@@ -1,0 +1,946 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Document Sets and Document Classes · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="document-set-class.html" />
+    
+    
+    <link rel="prev" href="metadata_1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./#top">
+            
+                    
+                    Introductory Material for the Pendo Platform
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="./">
+            
+                <a href="./#support-portal">
+            
+                    
+                    Support Portal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="./">
+            
+                <a href="./#administration-overview">
+            
+                    
+                    Administration Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="readme.html">
+            
+                <a href="readme.html#login-page">
+            
+                    
+                    Logging in
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="./">
+            
+                <a href="./#when-to-use-what-a-workspace-overview">
+            
+                    
+                    When to Use What – A Workspace Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="./">
+            
+                <a href="./#doc-hist">
+            
+                    
+                    Document History
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="sourcing_data.html">
+            
+                <a href="sourcing_data.html#top">
+            
+                    
+                    Sourcing Data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="sourcing_data.html">
+            
+                <a href="sourcing_data.html#file-systems-component">
+            
+                    
+                    Files and Folders Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="sourcing_data.html">
+            
+                <a href="sourcing_data.html#upload-component">
+            
+                    
+                    Uploads Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="sourcing_data.html">
+            
+                <a href="sourcing_data.html#data-sources-component">
+            
+                    
+                    Remote Sources Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="metadata_1.html">
+            
+                <a href="metadata_1.html#top">
+            
+                    
+                    Entities and Attributes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="metadata_1.html">
+            
+                <a href="metadata_1.html#entities-component">
+            
+                    
+                    Entities Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="document-set-class.html">
+            
+                <a href="document-set-class.html#top">
+            
+                    
+                    Document Sets and Document Classes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="document-set-class.html">
+            
+                <a href="document-set-class.html#docset-component">
+            
+                    
+                    Document Sets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="document-set-class.html">
+            
+                <a href="document-set-class.html#classification">
+            
+                    
+                    Document Classes Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="ocr-screens.html">
+            
+                <a href="ocr-screens.html#top">
+            
+                    
+                    OCR related screens and Confidence numbers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="class-stats.html">
+            
+                <a href="class-stats.html#top">
+            
+                    
+                    Classification Statistics
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="unified_search.html">
+            
+                <a href="unified_search.html#top">
+            
+                    
+                    Unified Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="appendix_high_level_behaviors.html">
+            
+                <a href="appendix_high_level_behaviors.html#top">
+            
+                    
+                    Appendix - All About Grids: Sorting, Filtering, Grouping and more.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="appendix_plugins.html">
+            
+                <a href="appendix_plugins.html#top">
+            
+                    
+                    Appendix – Data Plugins - General Information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="appendix_document_navigation.html">
+            
+                <a href="appendix_document_navigation.html#top">
+            
+                    
+                    Appendix - Non- and Semi-Structured Document Navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="appendix_using_fixed_values.html">
+            
+                <a href="appendix_using_fixed_values.html#top">
+            
+                    
+                    Appendix – Using Fixed Values including Approved List of Values during Classification Mapping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="appendix_using_excel_plugin.html">
+            
+                <a href="appendix_using_excel_plugin.html#top">
+            
+                    
+                    Appendix - Using the Excel Plugin for Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="appendix_advanced_data_extraction.html">
+            
+                <a href="appendix_advanced_data_extraction.html#top">
+            
+                    
+                    Appendix - Classification - Advanced Data Extraction Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="appendix_date_time.html">
+            
+                <a href="appendix_date_time.html#top">
+            
+                    
+                    Appendix - Date and Time Formatting and Parsing Options
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="appendix_api_naming.html">
+            
+                <a href="appendix_api_naming.html#api-naming">
+            
+                    
+                    Appendix - API Naming
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Document Sets and Document Classes</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="top">Document Sets and Document Classes </h1>
+<ul>
+<li><a href="#docset-component"><em>Document Sets</em> Component</a><ul>
+<li><a href="#usage-0">Usage</a></li>
+<li><a href="#docset-screens"><em>Document Sets</em> Screens</a><ul>
+<li><a href="#docset-grid"><em>Document Set Grid</em></a></li>
+<li><a href="#docset-edit-screens"><em>Edit</em> Screens</a><ul>
+<li><a href="#docset-overview-tab"><em>Overview</em> Tab</a></li>
+<li><a href="#docset-filetypes-tab"><em>File Types</em> Tab</a></li>
+<li><a href="#docset-documentation-tab"><em>Documentation</em> Tab</a></li>
+<li><a href="#docset-indexing-plugins-tab"><em>Indexing Plugins</em> Tab</a></li>
+</ul>
+</li>
+<li><a href="#docset-delete"><em>Delete</em></a></li>
+<li><a href="#docset-rebuild-indexsel"><em>Reindex Selected</em> - reindex a single <em>Document Set</em></a><ul>
+<li><a href="#batch-and-grid-size1"><em>Batch</em> and <em>Grid</em> Sizing</a></li>
+<li><a href="#docset-search"><em>Search</em></a></li>
+</ul>
+</li>
+<li><a href="#docset-rebuild-index"><em>Reindex</em> - Reindex multiple <em>Document Sets</em> from a single screen</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#classification"><em>Document Classes</em></a><ul>
+<li><a href="#class_what">What is the Component Used For?</a></li>
+<li><a href="#assumption">Assumptions</a></li>
+<li><a href="#class-flex">Project Prerequisites</a></li>
+<li><a href="#gen_concepts">General Concepts</a></li>
+<li><a href="#create_class">Creating a <em>Document Class</em></a></li>
+<li><a href="#edit_class">Editing a <em>Document Class</em></a><ul>
+<li><a href="#class_overview_tab"><em>Overview</em> and <em>Documentation</em> Tabs</a></li>
+<li><a href="#class_assoc"><em>Associated Data Sets</em> Tab</a></li>
+<li><a href="#class-prev"><em>Document Preview</em> Tab</a></li>
+<li><a href="#class_marker"><em>Markers</em> Tab</a></li>
+<li><a href="#class_preproc"><em>Preprocessors</em> Tab</a></li>
+<li><a href="#class_entatt"><em>Mapping</em> Tab</a></li>
+<li><a href="#class_attprev"><em>Attachment Preview</em> Tab</a></li>
+<li><a href="#class-maphist-details"><em>Mapping History</em> Details</a></li>
+</ul>
+</li>
+<li><a href="#class_delete"><em>Deleting</em> a <em>Document Class</em></a></li>
+<li><a href="#class-duplicate"><em>Duplicating</em> a <em>Document Class</em></a></li>
+<li><a href="#class_extract">Extracting the data - <em>Attach a Document Class</em></a><ul>
+<li><a href="#batch-and-grid-size2"><em>Batch</em> and <em>Grid</em> Sizing</a></li>
+<li><a href="#class_entity_search">Looking at the extracted data</a></li>
+</ul>
+</li>
+<li><a href="#class-attach-history"><em>Attach History</em></a></li>
+<li><a href="#class_document"><em>Documentation</em></a></li>
+</ul>
+</li>
+</ul>
+<p><strong>The overall project processes for extracting data is shown below.</strong></p>
+<p><img src="document-set-class/2b4dad215ad01bd06262193ae049148d.png" alt=""></p>
+<p>This two sections of the manual focus on the documents that have already been imported and how to get data out of them.  </p>
+<h1 id="docset-component">Document Sets Component </h1>
+<p><img src="document-set-class/3b19307204f95e21de6e95d845391c6b.png" alt=""></p>
+<h2 id="usage-0">Usage </h2>
+<p>Click on <em>Explore</em> or on <em>Document Sets</em> . This will take you to the main <em>Grid</em>, which lists all the <em>Document Sets</em> that were created when you <em>Imported</em> the contents of a <em>File or Folder</em> into your <em>Workspace</em>.</p>
+<p>Note: As soon as a <em>Document Set</em> is <em>Imported</em>, it is automatically indexed, allowing for searching through all data in the <em>Workplace</em> as if it was one big data source. See <a href="unified_search.html">Unified Search</a>.</p>
+<h2 id="docset-screens"><em>Document Sets</em> Screens </h2>
+<h3 id="docset-grid"><em>Document Set</em> Grid </h3>
+<p><img src="document-set-class/cae2c606862443a96ba13087df2a794f.png" alt=""></p>
+<p><em>Document Sets</em> are groups of non-database files that you have brought into the <em>Pendo Platform</em>. This is where can you <em>Edit, Delete, Reindex</em> and <em>Search</em> thru any <em>Document Set or Sets</em>. These documents would typically be spreadsheets, PDF files, email, word processing documents, etc.  </p>
+<p><a href="#top">Top of Section</a></p>
+<h3 id="docset-edit-screens">Edit Screens </h3>
+<h4 id="docset-overview-tab"><em>Overview</em> Tab </h4>
+<p><img src="document-set-class/51e480a6e1e9ca9842c9822ffb300bb1.png" alt=""></p>
+<ul>
+<li>You may edit the <em>Document Set Name</em> as desired.</li>
+<li>You may enter/edit descriptive information about the <em>Document Set</em> (e.g. where did the you get it, time span encompassed, how it will be used for your project, etc.)</li>
+<li>You can see (but not modify) the <em>Source</em> of this <em>Document Set</em>.  </li>
+<li><em>Source</em> give you the name of the Remote Source if that is where the <em>Document Set</em> came from.</li>
+</ul>
+<p><a href="#top">Top of Section</a></p>
+<h4 id="docset-filetypes-tab"><em>File Types</em> Tab </h4>
+<p><img src="document-set-class/e4634f5519ecbea1321bc972150dfa2b.png" alt=""></p>
+<ul>
+<li>This screen shows you what types of files are in the <em>Document Set</em>.  </li>
+</ul>
+<p><a href="#top">Top of Section</a></p>
+<h3 id="docset-documentation-tab"><em>Documentation</em> Tab </h3>
+<p><img src="document-set-class/188cb39d03f35a80a6bdd4d5b26d3a74.png" alt=""></p>
+<p>Enter any desired project internal documentation notes about this <em>Document Set</em>.  </p>
+<h3 id="docset-indexing-plugins-tab"><em>Indexing Plugins</em> Tab </h3>
+<p><img src="document-set-class/fb23d1179d55c9dd8eebe2428f7ea552.png" alt=""></p>
+<p><strong>NOTE: When editing <em>Document Sets</em>, the <em>Pendo Platform</em> will ensure that at least one <em>Plugin</em> is a <em>Document Builder</em> so that <em>Indexing</em> will work.</strong>  </p>
+<ul>
+<li>Here you can see and alter which <em>Plugins</em> are being used for the <em>Document Set</em>. Select only those <em>Plugins</em> that are relevant to type of file and the projects being worked on in your <em>Workspace</em>.  </li>
+<li>Many <em>Plugins</em> have additional options. Some of these options are simply Yes/No while others may allow further interaction, such as entering in <em>Keywords</em> or creating scripts to extract targeted data out of a <em>Document Set</em>.</li>
+</ul>
+<p><a href="#top">Top of Section</a></p>
+<h2 id="docset-delete"><em>Delete</em> </h2>
+<p>Allows you to <em>Delete</em> a <em>Document Set</em> from the <em>Workspace</em>.   </p>
+<p><a href="#top">Top of Section</a></p>
+<h2 id="docset-rebuild-indexsel"><em>Reindex Selected - One Document Set at a time</em>  </h2>
+<p><img src="document-set-class/3079bb7790b7a7c939eebf94042947fb.png" alt=""></p>
+<p><strong>WARNING</strong>:  Whenever you <em>Reindex</em> any <em>Document Set</em> that had a <em>Document Class Attached</em>, the status of the attachment will become &apos;Stale&apos;, indicating that until you to rerun the <em>Attach</em> process, the extraction is out of sync with the updated <em>Document Set</em>. Please rerun the Attach process for the <em>Document Class</em>.  This will ensure that the previous data that had been extracted to a <em>Target Entity</em> will be removed and the updated data will replace it.  The <em>Document Class</em> itself is fine, you just need to attach it again.  </p>
+<p>For the most part, you will need to <em>Reindex</em> when you are changing/modifying <em>Plugins</em> or when the data source has been updated.  </p>
+<p>If you highlight a <em>Document Set</em> and click <em>Reindex Selected</em>, you will see a popup screen.</p>
+<p><img src="document-set-class/c41847662559a073c97102a2b0cf136a.png" alt=""></p>
+<h3 id="batch-and-grid-size1">Batch and Grid Sizing </h3>
+<p>When dealing with <em>Document Sets</em> the <em>Batch Size</em> is the number of files that will be brought into memory at one time.
+The ideal batch size depends on both the amount of memory in the server and the type and sizes of data with which you are dealing.  The smaller the individual file sizes and the more memory your server has, the bigger the <em>Batch Size</em> can be.  </p>
+<p>The <em>Grid Size</em> determines the number of simultaneous threads that will be used to process the data.  The ideal size will depend on the number of processors your server has and what else may be running on the server at the same time.</p>
+<p>The <em>Platform</em> will look at your entries and validate them, learning more about each specific data set over time.   You will also get notified about <em>Grid</em> and <em>Batch</em> sizes when you <em>Attach A Document Class</em> in order to extract the mapped data to the <em>Target Entity</em>.  </p>
+<p>If the entered numbers are too big, a maximum recommendation will be shown.  You may overwrite the <em>Platform</em> recommendations, but be aware that this increases the chance that a <em>Platform Worker</em> the crash, requiring it to be restarted by your technical support team..</p>
+<p><a href="#top">Top of Section</a></p>
+<h2 id="docset-rebuild-index"><em>Reindex - Multiple Document Sets from a single screen</em>  </h2>
+<p>Clicking &apos;Reindex&apos; brings up a popup screen showing all of the <em>Document Sets</em> in the <em>Workspace</em>.<br><img src="document-set-class/543ceb815c71a790e5dd1958330fcea0.png" alt=""></p>
+<p>Here, you may select one or more  <em>Document Sets</em> you wish to be reindexed. There is also a filer box at the top of this screen, allowing you, for example, select only <em>Document Sets</em> that have the word &apos;excel&apos; in the name.</p>
+<p><img src="document-set-class/666beff15cac0b97324774d9da9a0402.png" alt=""></p>
+<p><a href="#top">Top of Section</a></p>
+<h2 id="docset-search">Search </h2>
+<p>Clicking the <em>Search</em> button invokes the <em>Unified Search</em> and filters the <em>Scope</em> to search only within the specific <em>Document Set</em>. This can be very helpful when you:</p>
+<ul>
+<li>Don&#x2019;t want to search through everything on the <em>Pendo Platform</em>.</li>
+<li>Want to see the results of a <a href="#classification"><em>Document Class</em></a>.</li>
+<li>You want to test scripts you are writing.</li>
+</ul>
+<p>You may, of course, override this by clicking on the drop down arrow by the <em>Scope</em> box and selecting &#x2018;All Sources&#x2019; or any combination of data sources in your <em>Workspace</em>.</p>
+<p> <em>Unified Search</em> is very powerful. To help get the most out of your searches, please be sure to see
+ <a href="unified_search.html#top">Unified Search</a></p>
+<p><a href="#top">Top of Section</a></p>
+<h1 id="classification"><em>Document Classes</em> </h1>
+<p><img src="document-set-class/e504e08b12d6dd268a7caed487f52c92.png" alt=""></p>
+<h2 id="class_what">What is the component used for? </h2>
+<p>The overall goal of this component is to extract information from unstructured data - creating structured information from otherwise difficult sources. An example would be taking millions of PDF documents, targeting certain data that you want consolidated and putting it into one or more tables.</p>
+<p>The component is designed to:</p>
+<ul>
+<li>Analyze large numbers of files to determine which variation of a <em>Document Class</em> works for each file.</li>
+<li>Tweak the <em>Class</em> to be as inclusive of as much of the data in the <em>Document Sets</em> as possible.</li>
+<li>Easily identify outliers.</li>
+<li>Extract the desired data elements and put them into a <em>Target Entity</em>.  </li>
+<li>Track the <em>History</em> of all changes made by <em>Users</em> that would affect the data being extracted, and create a file that has all the details of the <em>Document Class</em> setting each time data is extracted.  </li>
+</ul>
+<p><a href="#top">Top of Section</a></p>
+<h2 id="assumption">Assumptions </h2>
+<p>You will need one or more <em>Target Entities</em> that will become the aggregated repository of all the data you extract from the targeted <em>Document Sets</em>. You can do this in two ways: you can import or create these <em>Target Entities</em> as described in previous sections.  </p>
+<ul>
+<li>Your technical support may have already imported an empty target database that has the <em>Entities and Attributes</em> that make sense for your project.   </li>
+<li>You can make the Target Entity yourself by going into <em>Entity-&gt;Create</em>.  </li>
+<li>You may modify these <em>Entities</em> and <em>Attributes</em> as needed during the course of your project.</li>
+</ul>
+<p>You may or may not have a good understanding of contents the <em>Document Sets</em> which you are going to be using.  That&apos;s ok as we can use the tools of <em>Platform</em> to help us understand what the trapped data actually is, how unlock it and extract if for your use.  </p>
+<p><a href="#top">Top of Section</a></p>
+<h2 id="class-flex">Flexibility </h2>
+<p><strong>Note the flexibility of the <em>Platform</em> to conform to your project needs.  Everything has a &apos;many-to-many relationship&apos;</strong>.    </p>
+<ul>
+<li>You map to as many <em>Target Entities</em> as desired.<ul>
+<li>Within any given <em>Document Class</em>, data may be mapped to more than one <em>Target Entity</em>.  For example, you may wish to extract data from a group of Word documents into two or more <em>Target Entities</em>.</li>
+</ul>
+</li>
+<li>You may use as many <em>Document Sets</em> for the data as desired.  </li>
+<li>More than one <em>Document Class</em> can mapped to a the same <em>Target Entity</em>. For example, one <em>Document Class</em> looking at Word documents and another <em>Document Class</em> looking at Excel files may extract data into the same <em>Target Entity</em> for better aggregation.</li>
+</ul>
+<p><a href="#top">Top of Section</a></p>
+<h2 id="gen_concepts">General Concepts </h2>
+<p>The high level workflow in this component is:<br><strong><em>Create</em></strong>.<br>Create a <em>Document Class</em> for a type of file (Excel, Text, etc.) and select from any of the <em>Document Sets</em> from which you wish to extract information.<br><strong>Identify a group of files by using <em>Markers</em></strong>.<br>Select a representative file to use as a template of the other files in a <em>Document Set</em>. Create and modify <em>Markers</em> that will be used to correctly target many files.<br>The <em>UI</em> allows you to interactively view the selected files (e.g. Excel&#xA9; files) and test Markers, showing the number of hits/miss across the selected <em>Document Sets</em>.<br><strong><em>Map</em> the documents and test the proposed data extraction</strong>.<br>Using  various methods, intelligently search and navigate through the document to select the data you desire to extract.  See real-time results, allowing you to verify your mapping and understand any outliers.<br><strong>Iterate</strong> until you are satisfied you have extracted as much data as desired with the quality you demand.<br><strong>Extract your Data</strong>.<br>Run <em>Attach</em> to extract the data from all the eligible files in your selected datasets.  Go to the <em>Target _Entity</em> to <em>Search</em> and <em>Download</em> the data.<br><strong>Satisfy Auditors and Internal Compliance</strong>.<br>Document the <em>Document Class</em> on demand and automatically whenever an <em>Attach</em> is run. All modifications to any <em>Document Class</em> are stored in readily accessible <em>History</em> files.  </p>
+<p><a href="#top">Top of Section</a></p>
+<h2 id="create_class"><em>Create</em> a <em>Document Class</em> Tab </h2>
+<p>Setting up a <em>Document Class</em> is a two-step process: <em>Create</em> and then <em>Edit</em>.  Click <em>Create</em> from the grid screen.  When creating a <em>Document Class</em>, you will only see two tabs.  </p>
+<p><img src="document-set-class/e37d60a03bda8c9f390e917c2cd7cf7b.png" alt=""></p>
+<p>Enter the name of your new <em>Document Class</em>, select the desired <em>Classification Plugin</em> and type in any descriptive information you desire.<br>You may optionally go to the <em>Documentation</em> tab and enter any project internal documentation you wish.  </p>
+<p>Click <em>Create</em> at the bottom right.  You will go back to the grid.  </p>
+<p><a href="#top">Top of Section</a></p>
+<h2 id="edit_class"><em>Edit</em> a <em>Document Class</em> Tab </h2>
+<p>Highlight the <em>Document Class</em> and click <em>Edit</em>.  </p>
+<h3 id="class_overview_tab"><em>Overview</em> and <em>Documentation</em> Tabs </h3>
+<p><img src="document-set-class/6e06285198bfa07d9c5749423462f898.png" alt=""></p>
+<p>These are exactly the same as when creating the <em>Document Class</em>.  </p>
+<p><a href="#top">Top of Section</a></p>
+<h4 id="class_assoc"><em>Associated Data Sets</em> Tab </h4>
+<p>Click on <em>Associated Data Sets</em> tab.</p>
+<p><img src="document-set-class/3829f86a89288b75651e3df8805614ae.png" alt=""></p>
+<p>The <em>Document Sets</em> are shown in alphabetical order.  Here you select from one or more of the <em>Document Sets</em> that contain the files that have the data you want to extract. The list of <em>Document Sets</em> will appear in alphabetical order.  Note that:</p>
+<ul>
+<li>You may pick as many <em>Document Sets</em> as you wish.  </li>
+<li>You may change the <em>Document Sets</em> you are using whenever you need to for your project.  <ul>
+<li>Be aware that if you change the <em>Document Sets</em> used for a <em>Document Class</em>, the <em>Attachmnet State</em> will be reset to &quot;Stale&quot;, indicating that you must run the Attach again to extract all the desired information.</li>
+</ul>
+</li>
+</ul>
+<p><a href="#top">Top of Section</a></p>
+<h4 id="class_prev"><em>Documents Preview</em> Tab </h4>
+<p>Click the <em>Documents Preview</em> tab</p>
+<p><img src="document-set-class/11ec59bc0f58a63041996985b1e5f197.png" alt=""></p>
+<p>Select a file from one of your selected <em>Document Sets</em> that you will use as a template for <em>Markers</em>. Yoo may change this selection at any time.</p>
+<p><a href="#top">Top of Section</a></p>
+<h4 id="class_marker"><em>Markers</em> Tab </h4>
+<p><img src="document-set-class/1015b106d6033448ab8395cff7e4a4e5.png" alt=""></p>
+<p>Above, you can see the we are using a RegEx to look at a specific worksheet and cell in all the excel files in the Document Sets that were selected.  Further, the cell must have text that starts with either &apos;Jones&apos; or &apos;Acme&apos;.  </p>
+<p><em>Markers</em> act as filters against all the files in the selected <em>Docment Sets</em>.   </p>
+<p>The goal of using <em>Markers</em> to correctly identify a group of files so that targeted data can be extracted. Remembering that the format/layout of your source files may have changed over time, more than one <em>Marker</em> may be needed to correctly identify files that belong to this class. However, with clever markers, usually only one <em>Marker</em> is needed. The <em>UI</em> allows you to visually see the data in its native form (without special formatting). This allows you to understand how your <em>Markers</em> are working, change the <em>Markers</em> as needed and see the <em>Document Preview</em> count update.  </p>
+<p>When you start a new <em>Document Class</em> that has no <em>Markers</em> the <em>Document Preview</em> tab indicates 100% hits since the is no filer in place.</p>
+<p><strong>Note</strong>: For details on the syntax available to you to create <em>Markers</em>, please see the appropriate article on Zendesk. Different selections will be available depending on the type of file with which you are working.  For example, you may have <em>Regular Expression</em> available to you no matter what, but you would have also have <em>Excel Fixed Value</em> and <em>General Query Marker</em> for Excel, Text Fixed Value for PDF, etc.</p>
+<p>To make a <em>Marker</em>:</p>
+<ul>
+<li>Highlight the cell of the spreadsheet on the right</li>
+</ul>
+<p>On the left, select what type of expression to use in the <em>Target Value</em> box and click the + icon.  </p>
+<p>For help with <em>Regular Expressions</em>, please go to <a href="http://www.regular-expressions.info/" target="_blank">Regular Expression Reference Page</a>. This is a very feature rich syntax.  Please be sure to select <strong>Java</strong> as the flavor of RegEx.  </p>
+<p><img src="document-set-class/c88734008a60c6ea586c79ac2d5ca7b4.png" alt=""></p>
+<p>In this example, we have elected to use a <em>Regular Expression</em> so as to make use of a wildcard in the <em>Target Value</em>.</p>
+<ul>
+<li>In the <em>Reference</em> field, you see the name of the <em>Worksheet</em> (Master) and the absolute value of the cell or range of cells.</li>
+<li>In the <em>Target Value</em>, you enter the allowed values that will be searched for in that Cell.  In the first part of the example, you see that the word Jones is followed by a period and an asterisk, which is RegEx syntax for &quot;anything starting with Jones&quot;.  So <em>Jones Report 1</em> or <em>Jones Dealership</em> would both be found.  The second part of the <em>Target Value</em> is the pipe and then Acme followed by the period and asterisk.  The pipe symbol (|) means OR.  So the entire text means that any spreadsheet that has a worksheet called <em>Master</em> and has text that start with either <em>Jones OR Acme</em> would be included in this <em>Document Class</em>.</li>
+</ul>
+<p>You may create as many <em>Markers</em> as needed to identify a group of similar files. Usually one <em>Marker</em>, even if it is complex, is sufficient.
+The trash can icon deletes that <em>Marker</em>.</p>
+<p><strong>NOTE</strong> as soon as a <em>Marker</em> is created, you will see the number of hits the system found is updated in the <em>Documents Preview</em> tab.  This allows interactive feedback between the <em>Markers</em> you are creating and hits the PD<sup>3</sup>P will find.  Clicking back to <em>Documents Preview</em> allows you to see which documents would be identified as a hit based on the current <em>Markers</em>.</p>
+<p>This is an iterative process. Once you are happy with the <em>Markers</em> you have made and that the correct files will be targeted, proceed to the next step. You can always go back and modify the <em>Marker</em> as needed.</p>
+<p><a href="#top">Top of Section</a></p>
+<h4 id="class_preproc"><em>Preprocessors</em> Tab </h4>
+<p>This feature is not yet available.  This is a placeholder.  The screen framework is there, but no options exist.</p>
+<p><a href="#top">Top of Section</a></p>
+<h4 id="class_entatt"><em>Mappings</em> Tab </h4>
+<p><img src="document-set-class/00f8bf868089b4ffa57fede8672c7d73.png" alt=""></p>
+<p>In this tab you are targeting data that you want to extract, optionally cleaning the data or manipulating it, and mapping it to your <em>Target _Entity/Attribute</em>.  Note that, in general, the extracted data will be a string value as opposed to a numeric value. This allows the <em>Pendo Platform</em> to keep formatting i.e. a dollar sign. If you wish to reformat dates, extract actual numbers for any reason, including doing math as part of extracting using <em>Expressions</em>, you will need to use the correct <em>Cleaner</em> or modify it within an expression.<br><em>Mapping</em> is very powerful and therefore has many options.</p>
+<p>For details on <em>Mapping</em> syntax options, please see the appropriate articles for a specific file type on Zendesk.    </p>
+<p>There are several sections and options on this screen.  Lets go over the core sections first:  </p>
+<p><strong>CORE SCREEN SECTIONS</strong><br><strong>Section 1.</strong> You must select a Mapping Type.  Depending on the type of file you are dealing with, the dropdown options allowing you to select a <em>Mapping Type</em> will differ.</p>
+<p>Here is what you would see as options for MS Excel<sup>(c)</sup> files.  </p>
+<p><img src="document-set-class/0fa01ee862cd3171e7a559840f1b8afe.png" alt="">   </p>
+<p>This is what you would see for Text based files such as PDFs that have been OCRed.  </p>
+<p><img src="document-set-class/28b9541dbe95f161e71908b1679dc998.png" alt="">  </p>
+<p>Here is what you would see for MS Word<sup>(c)</sup> files.  </p>
+<p><img src="document-set-class/3acb0e078bfe80b05e57357fd97992b3.png" alt="">  </p>
+<p><strong>Section 2.</strong>  Select to map either a Attribute or a Variable.  </p>
+<p><img src="document-set-class/6a1181ce327f5ba6fcb7f53fc73bad99.png" alt=""></p>
+<p>When you wish to directly extract data to your <em>Target Attibute</em>, select <em>Attribute</em>.  You would then have a dropdown as part of your mapping to select the specific <em>Target Entity/Attribute</em> you wish to populate.</p>
+<p>Mapping to Variables give additional flexibility in searching for and manipulating data.  You can extract data from documents into temporary variables (using expressions) and then reference those variables in other mappings.</p>
+<p>Both Attributes and Variables can be previewed.</p>
+<p>How variables and attributes are different:</p>
+<ul>
+<li>Attributes are always associated with <em>Target Entities</em> whereas variables are not.</li>
+<li>Attribute values are stored in <em>Target Entities</em> whereas variables hold temporary values that are not permanently stored.</li>
+<li>Only variables can be referenced by other expressions in other mappings.</li>
+<li>When creating a given mapping, the mapping is either an attribute or variable name, but not both.</li>
+<li>Variables defined in mappings are available in scripts. Variables defined in scripts are available across other mappings.</li>
+<li>In scripts, variables are defined as follows:</li>
+<li>document.variables[&apos;myVar&apos;] = &quot;something&quot;<ul>
+<li>In subsequent groovy and python scripts or workbook expressions, the variable is accessible.</li>
+</ul>
+</li>
+<li>In Groovy or Python, it is available like so:<ul>
+<li>print(myVar)</li>
+</ul>
+</li>
+<li>In workbook expressions, it is available like so<ul>
+<li>#myVar  </li>
+</ul>
+</li>
+</ul>
+<p><strong>Section 3.</strong>   Mapping Details Area
+This section is where all the pieces of information that are needed by a mapping are found.  Different type of mappings have different field that need to be entered, so the screen will show you what is needed for each option.  </p>
+<p><strong>SCREEN OPTIONS</strong></p>
+<ul>
+<li><strong>Preview / Data View toggle</strong>.<br>Clicking the <em>Show Preview/Hide Preview</em> button toggles between looking at the document you selected in the <em>Document Preview</em> screen and looking at the results of any mapping you have selected.   </li>
+</ul>
+<p>Showing a document preview
+<img src="document-set-class/78739b78566cfa24f7cad173c38c0116.png" alt=""></p>
+<p>Showing selected mapping results.
+<img src="document-set-class/8d37356d746f3e53c1bcbb863d6d99dc.png" alt=""></p>
+<ul>
+<li>This allows you to preview Mapping results without changing tabs, saving time and clicks, helping you focus on specific mappings more efficiently.</li>
+<li>Any number of mapping can be selected via the Ctrl or Shift key in standard windows fashion.  Use of the Command key for Macs is supported.    </li>
+<li>Be sure to click the Load Data button to refresh data.</li>
+<li>Only the items selected will show in this area.</li>
+<li>The first column is a link which opens switches to a popup <em>Detail View</em>, the same as in a <em>Document Set Search</em> grid that shows data in rows rather than columns.</li>
+<li><p>The second and third columns show the number of errors or warning that were processed.  These columns are sortable in <em>Document Classes</em>.  If there are Errors or Warnings, switching to the <em>Detail View</em> gives you access to the appropriate tabs.</p>
+</li>
+<li><p><strong>Minimize all button</strong>.<br><img src="document-set-class/41dfb09c0acfdd34bfc8f3bcac83a12c.png" alt=""><br>Located above the topmost mapping, this allows users to minimize all mappings at once, making it easier to see all the tiles.  </p>
+</li>
+<li><p><strong>Detach All/Attach all/Attach and the Enabled/Attach not enabled checkbox.</strong>.
+<img src="document-set-class/a85b3f2984df95c6284cbe87e89b5f44.png" alt="">  </p>
+</li>
+</ul>
+<p>You have the ability to select/deselect any mapping from actually attaching and extracting data.  This can help you with intermediate attachments as you are working thru various Mapping challenges.
+You can enable and disable variables and attributes for classification attachment via a checkbox on each mapping on the right side of each mappings title bar.</p>
+<p>The default behavior is to enable attachment of each Mapping upon its creation.  You must uncheck the box to disable attachment.  You may toggle this as often as you wish.
+The &#x2018;enabled&#x2019; and &#x2018;disabled&#x2019; checkbox will not impact the in-tab preview of selected attributes and variables.
+There is also a &#x2018;Enable All/Disable&#x2019; all button above the topmost Mapping.</p>
+<ul>
+<li><strong>Re-Ordering Mappings</strong>.<br><img src="document-set-class/7a4c1eade6d8b966e6c6c6fe197aaffc.png" alt=""></li>
+</ul>
+<p>The user will need to manage variable-attribute dependencies and making sure that any variable dependencies that are required by selected attributes are selected and in the correct sequence.</p>
+<p><strong>MISC Mapping Notes</strong>:</p>
+<ul>
+<li>If you wish to extract the data that was used as a <em>Marker</em>, you will need to map it here as well as keeping it as a <em>Marker</em>.</li>
+<li>You may map to several different <em>Entities</em> in the same <em>Document Class</em>.</li>
+<li>The same data may be extracted multiple times by mapping to different <em>Entity/Attribute</em> selections.</li>
+<li>Different <em>Mapping</em> options will become available over time.  These options will vary also vary based on the kind of data being mapped (e.g. spreadsheets, PDF, word processing documents, emails, etc.).</li>
+<li>If you accidently enter an invalid expression, you will see the exception message inside of the cell in the <em>Mapping Results Preview</em> tab. This aids in debugging an expression.</li>
+</ul>
+<p>When you have made many mappings, it may be useful to search for a specific mapping you made. There is a filter box, which is blank by default.  Put in a string (the filter is not case sensitive) and you will see only those mapping that have that phrase. Spaces are allowed to be part of the filter, as seen below:  </p>
+<p><img src="document-set-class/b159774cdf1e43281f6152f95ef1fa67.png" alt="">  </p>
+<p><strong>Special Note on Text Mappings</strong><br>A text file can present many challenges, among them is the fact that there is no structure other than line nodes, making navigation more difficult.  To aid in this, when using a Mapping Type=Regular Expression, you are presented with  <em>Filter Expression, Matcher Expression</em> and <em>Cleaner</em> fields.</p>
+<ul>
+<li>The <em>Filter Expression</em> allows you to narrow down to a specific line using a <em>Regular Expression</em>.</li>
+<li>The <em>Matcher Expression</em> lets you work with the data that results form the <em>Filter Expression</em> and pull a particular value from that line using another <em>Regular _Expression</em>.</li>
+<li>The <em>Cleaner</em> works the same way in all <em>Mappings</em>.</li>
+</ul>
+<p><a href="#top">Top of Section</a></p>
+<h4 id="class_attprev"><em>Attachment Preview</em> Tab </h4>
+<p>The last step of testing a <em>Document Class</em> is to be sure the <em>Mapping</em> you just did is correct.  Click the <em>Mapping Results Preview</em> tab. There are a few sections on this tab.
+This is where you will see what the <em>Target Entity/Attributes</em> will look like if you <em>Save</em> the <em>Document Class</em> and run an <em>Attach</em>.   </p>
+<p><img src="document-set-class/144c541b02f8f9e90e0972c14ebc21fe.png" alt=""></p>
+<p>There are also two major viewing options on this page.
+<img src="document-set-class/b57a010522a28948675f1da8c66b0b88.png" alt=""></p>
+<p><strong>Viewing more data</strong>:<br><img src="document-set-class/4e2e643c04b429f7e25b51f4eea1dd00.png" alt="">  </p>
+<p>By default, only the first 20 hits are previewed and the data is displayed automatically.  However, the number of records requested on <em>Attachment Preview</em> tab is adjustable via a slider bar. Each time you start to <em>Edit</em> a <em>Document Class</em>, the default remains 20 rows of data being retrieved from the server. You can increase this as needed, helping you debug and verify mapping logic by allowing more data to be visualized quickly. If you want to see more data, use the slide bar. The number of records selected will stay persistent during the entire <em>Edit</em> session. Since this number can be quite large, the &apos;Auto Reload&apos; checkbox is deselected when the slider is changed.  This makes it clear that the user must manually reload the data. This will prevent unexpected/undesired delays when switching between tabs.  </p>
+<p><strong>Mapping Errors</strong>:</p>
+<p><img src="document-set-class/e9222c2ffc5b39f3da5f48233a4a5911.png" alt=""></p>
+<p>There are two basic types of mapping errors.  </p>
+<ol>
+<li>If you make a mistake that does not result in a processing error, you will not be extracting your desired data.</li>
+<li>If you make a mistake that results in a processing error, you may get either a Warning or an Error.  Above we show and Error. (The column with the yellow triangle is the Warning column). This is easily seen in the <em>Mapping</em> tab when <em>Previewing</em> data or  <em>Attachment Preview</em> tab. As you can see above, the Error column was populated, in this case indicating 2 issues, and the desired attribute or variable will show as blank.  </li>
+</ol>
+<p><a href="#top">Top of Section</a></p>
+<h4 id="class-maphist-details"><em>Mapping History</em> Details </h4>
+<p>Whenever a <em>User</em> makes a change to a <em>Document Class Name, Marker</em> or <em>Mapping</em> and clicks <em>Save</em> or <em>Save and Close</em>, a new <em>Mapping History</em> number is generated and the change is noted in the <em>History</em> log.  </p>
+<p><img src="document-set-class/ed9d26d288df2369e84d15e2d1340118.png" alt=""></p>
+<p>Note that the <em>Mapping History</em> log will provide a view of the current state of changed items such as the version numbers (most recent up top), the Date of the Change and who changed it are provided.  </p>
+<p>Clicking the chevron will show additional details including:
+Change Type:  e.g. <em>Class Name, Mapping</em> or <em>Marker, Action Type</em> (such as Add, Remove, Update), <em>Attribute Name</em>, <em>Description</em> and <em>Cleaners</em> used, etc.   For example, use the fixed cell reference <code>Retail!I3</code> and clean the value to a decimal.  </p>
+<p><a href="#top">Top of Section</a></p>
+<h3 id="class_delete"><em>Delete</em> a <em>Document Class</em></h3>
+<p>This will delete the selected <em>Document Class</em>.  </p>
+<p><a href="#top">Top of Section</a></p>
+<h3 id="class-duplicate"><em>Duplicate</em> a <em>Document Class</em> </h3>
+<p>This will duplicate the selected <em>Document Class</em>. This is very useful when you already have a <em>Class</em> with many <em>Mappings</em> or very complex expressions and you need relatively minor tweaking for a new <em>Document Class</em>. Basically, this is a way to leverage your existing work.
+The duplicate will have the same name with &apos;Copy of &apos; added to the beginning of the name. You may then <em>Edit</em> and rename.  </p>
+<p><a href="#top">Top of Section</a></p>
+<h3 id="class_extract"><em>Attach</em> or <em>Attach Selected</em>  - Extracting the data </h3>
+<p><strong>The attach process is where the actual work of applying all the mapping of a <em>Document Class</em> to all the selected <em>Document Sets</em> and extracting the data to the <em>Target Entity</em> takes place.</strong></p>
+<p>By selecting <em>Attach Selected</em>, you will get a popup asking you to verify the <em>Batch Size</em> and the <em>Grid Size</em> for processing the documents. If you select <em>Attach</em>, the popup also allows multiple <em>Document Sets</em> to be attached.</p>
+<p><img src="document-set-class/0b0822ffe42c14ef165324670b21f069.png" alt=""></p>
+<h4 id="batch-and-grid-size2"><em>Batch</em> and <em>Grid Sizing</em> </h4>
+<p>For <em>Attaching a Class</em>, the <em>Batch Size</em> is the number of files brought into memory at one time and <em>Grid Size</em> is the number of simultaneous threads to be used by the server processors.<br>The <em>Platform</em> will look at your entries and validate them, learning about any given <em>Document Class</em> over time. If the numbers are too big, a maximum recommendation will be shown.  You may overwrite the <em>Platform</em> recommendations, which will increase the chance that the server will crash.   If this happens, you will just need to ask you support staff to restart and then just adjust the numbers down a bit.</p>
+<p><a href="#top">Top of Section</a></p>
+<h4 id="class_entity_search">Looking at the extracted data </h4>
+<p>From your <em>Workspace</em> home page, click on <em>Entities</em>.  Select the <em>Entity</em> you imported as a <em>Target</em> and Click <em>Search</em>.  You will see a snapshot of all the data that has been extracted from all the spreadsheets as of that time.  </p>
+<p><img src="document-set-class/397259d32b29c8bc0ede8c9dc30042b9.png" alt=""></p>
+<p>Now that you are looking at a <em>Search</em> grid, you can move columns around, sort and filter as well as download the information into an Excel&#xA9; spreadsheet.  The spreadsheet will have column headers based on the <em>Attribute Name</em> of your target <em>Entity</em>.</p>
+<p><strong>Technical Note</strong>: Please note that the <em>Attach Class</em> process does not actually populate the extracted data into the targeted <em>Entities/Attributes</em>. The structure of the <em>Entities/Attributes</em> is placed into the <em>Pendo Platforms&apos;</em> index. Much more information other than the targeted data is stored in the Index. Currently, you can export the data from the index into Excel on demand by using the <em>Entity -&gt;Search</em> feature and then exporting.</p>
+<p><a href="#top">Top of Section</a></p>
+<h4 id="class-attach-history"><em>Attach Class History</em> </h4>
+<p>Whenever you run an <em>Attach Class</em>, a snaphot of the entire <em>Document Class</em> is stored in the system.  This can assist you in identifying all aspects of how the data was extracted and/or modified in the <em>Platform</em>. In other words, this provide a data lineage from the source documents to the extracted data point.</p>
+<p><img src="document-set-class/8dad68ea6742c610b694d4543abb9e24.png" alt=""></p>
+<p>Just highlight any <em>Document Class</em> on the main grid and then click the <em>Attach History</em> button to see the all the setting in the <em>Class</em> that were in place each time the process was run.</p>
+<p><img src="document-set-class/e891c4d341b686354487afbc47d25953.png" alt=""></p>
+<p><a href="#top">Top of Section</a></p>
+<h4 id="class_document"><em>Documentation</em></h4>
+<p><img src="document-set-class/0bf9e35d98865ba1a402155aab0a3943.png" alt=""></p>
+<p>You may wish to see all the details of a <em>Document Class</em>. Highlight the <em>Document Class</em> in question and click on the  <em>Documentation</em> button. This will create a PDF that you can download.  It will contain information on the <em>Data Sets, Markers</em> and <em>Mapping</em> used.
+Example of <em>Classification Documentation</em>:</p>
+<p><img src="document-set-class/9e8b590ccd79ef645aa4a16f26808d72.png" alt=""></p>
+<p><a href="#top">Top of Section</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="metadata_1.html#entities-component" class="navigation navigation-prev " aria-label="Previous page: Entities Component">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="document-set-class.html#docset-component" class="navigation navigation-next " aria-label="Next page: Document Sets">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Document Sets and Document Classes","level":"1.4","depth":1,"next":{"title":"Document Sets","level":"1.4.1","depth":2,"anchor":"#docset-component","path":"document-set-class.md","ref":"document-set-class.md#docset-component","articles":[]},"previous":{"title":"Entities Component","level":"1.3.1","depth":2,"anchor":"#entities-component","path":"metadata_1.md","ref":"metadata_1.md#entities-component","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.2.3","theme":"default","variables":{},"plugins":["heading-anchors"],"pluginsConfig":{"heading-anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"document-set-class.md","mtime":"2017-12-08T21:21:33.921Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-10T14:13:37.801Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

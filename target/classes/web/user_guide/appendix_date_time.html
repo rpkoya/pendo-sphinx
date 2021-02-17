@@ -1,0 +1,929 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Appendix - Date and Time Formatting and Parsing Options · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="appendix_api_naming.html" />
+    
+    
+    <link rel="prev" href="appendix_advanced_data_extraction.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./#top">
+            
+                    
+                    Introductory Material for the Pendo Platform
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="./">
+            
+                <a href="./#support-portal">
+            
+                    
+                    Support Portal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="./">
+            
+                <a href="./#administration-overview">
+            
+                    
+                    Administration Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="readme.html">
+            
+                <a href="readme.html#login-page">
+            
+                    
+                    Logging in
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="./">
+            
+                <a href="./#when-to-use-what-a-workspace-overview">
+            
+                    
+                    When to Use What – A Workspace Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="./">
+            
+                <a href="./#doc-hist">
+            
+                    
+                    Document History
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="sourcing_data.html">
+            
+                <a href="sourcing_data.html#top">
+            
+                    
+                    Sourcing Data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="sourcing_data.html">
+            
+                <a href="sourcing_data.html#file-systems-component">
+            
+                    
+                    Files and Folders Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="sourcing_data.html">
+            
+                <a href="sourcing_data.html#upload-component">
+            
+                    
+                    Uploads Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="sourcing_data.html">
+            
+                <a href="sourcing_data.html#data-sources-component">
+            
+                    
+                    Remote Sources Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="metadata_1.html">
+            
+                <a href="metadata_1.html#top">
+            
+                    
+                    Entities and Attributes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="metadata_1.html">
+            
+                <a href="metadata_1.html#entities-component">
+            
+                    
+                    Entities Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="document-set-class.html">
+            
+                <a href="document-set-class.html#top">
+            
+                    
+                    Document Sets and Document Classes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="document-set-class.html">
+            
+                <a href="document-set-class.html#docset-component">
+            
+                    
+                    Document Sets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="document-set-class.html">
+            
+                <a href="document-set-class.html#classification">
+            
+                    
+                    Document Classes Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="ocr-screens.html">
+            
+                <a href="ocr-screens.html#top">
+            
+                    
+                    OCR related screens and Confidence numbers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="class-stats.html">
+            
+                <a href="class-stats.html#top">
+            
+                    
+                    Classification Statistics
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="unified_search.html">
+            
+                <a href="unified_search.html#top">
+            
+                    
+                    Unified Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="appendix_high_level_behaviors.html">
+            
+                <a href="appendix_high_level_behaviors.html#top">
+            
+                    
+                    Appendix - All About Grids: Sorting, Filtering, Grouping and more.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="appendix_plugins.html">
+            
+                <a href="appendix_plugins.html#top">
+            
+                    
+                    Appendix – Data Plugins - General Information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="appendix_document_navigation.html">
+            
+                <a href="appendix_document_navigation.html#top">
+            
+                    
+                    Appendix - Non- and Semi-Structured Document Navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="appendix_using_fixed_values.html">
+            
+                <a href="appendix_using_fixed_values.html#top">
+            
+                    
+                    Appendix – Using Fixed Values including Approved List of Values during Classification Mapping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="appendix_using_excel_plugin.html">
+            
+                <a href="appendix_using_excel_plugin.html#top">
+            
+                    
+                    Appendix - Using the Excel Plugin for Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="appendix_advanced_data_extraction.html">
+            
+                <a href="appendix_advanced_data_extraction.html#top">
+            
+                    
+                    Appendix - Classification - Advanced Data Extraction Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="appendix_date_time.html">
+            
+                <a href="appendix_date_time.html#top">
+            
+                    
+                    Appendix - Date and Time Formatting and Parsing Options
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="appendix_api_naming.html">
+            
+                <a href="appendix_api_naming.html#api-naming">
+            
+                    
+                    Appendix - API Naming
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Appendix - Date and Time Formatting and Parsing Options</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="top">Appendix - Date and Time Formatting and Parsing Options. </h1>
+<ul>
+<li><a href="#intro">Date and Time Formatting and Parsing</a></li>
+<li><a href="#patterns">Date and Time Patterns</a></li>
+<li><a href="#examples">Examples</a><ul>
+<li><a href="#example_format">Example Formats</a></li>
+<li><a href="#nlp_cleaner">Special <em>Mapping Cleaner</em></a></li>
+<li><a href="#example_coding">Example of Advanced Coding</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>A &apos;heads up&apos; notification:</strong><br>Date/Time fields have two behaviors, depending on the screen you are on:</p>
+<ol>
+<li>In the Document Class <em>Mapping preview of data</em> or the  <em>Attachment Preview</em> screens, the date and time will be formatted as specified, but will be sorted as string. Remember, this is just a preview, we have not actually moved the data to the Target Entity.</li>
+<li>AFTER an Attach has been run, if the date mapping was correctly formulated and is being saved to a properly date formatted Attribute, when you search on a Target Entity, the date data type is respected and true date/time sorting is supported.</li>
+</ol>
+<h1 id="intro">Date and Time Formatting and Parsing </h1>
+<p>The <em>Pendo Platform</em> uses the java class DateTimeFormatter thus giving the user a great deal of flexibility in formatting and parsing date and time information.  Full documentation of this java class can be found at <a href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html" target="_blank">https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html</a></p>
+<p>Note:  com.pendosystems.DateHelper has moved and can now be accessed at com.pendosystems.api.doc.DateHelper</p>
+<p>Below is the high level formatting options and some examples.  </p>
+<p><a href="#top">Top of Section</a></p>
+<h2 id="patterns">Date and Time Patterns </h2>
+<p>Patterns are based on a simple sequence of letters and symbols. A pattern is used to create or convert a Date or Dte Time into a desired output. For example, &quot;d MMM uuuu&quot; will format 2011-12-03 as &apos;3 Dec 2011&apos;.</p>
+<p>All letters &apos;A&apos; to &apos;Z&apos; and &apos;a&apos; to &apos;z&apos; are reserved as pattern letters. The following pattern letters are defined:  </p>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Presentation</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G</td>
+<td>era</td>
+<td>text</td>
+<td>AD; Anno Domini; A</td>
+</tr>
+<tr>
+<td>u</td>
+<td>year</td>
+<td>year</td>
+<td>2004; 04</td>
+</tr>
+<tr>
+<td>y</td>
+<td>year-of-era</td>
+<td>year</td>
+<td>2004; 04</td>
+</tr>
+<tr>
+<td>D</td>
+<td>day-of-year</td>
+<td>number</td>
+<td>189</td>
+</tr>
+<tr>
+<td>M/L</td>
+<td>month-of-year</td>
+<td>number/text</td>
+<td>7; 07; Jul; July; J</td>
+</tr>
+<tr>
+<td>d</td>
+<td>day-of-month</td>
+<td>number</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Q/q</td>
+<td>quarter-of-year</td>
+<td>number/text</td>
+<td>3; 03; Q3; 3rd quarter</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>week-based-year</td>
+<td>year</td>
+<td>1996; 96</td>
+</tr>
+<tr>
+<td>w</td>
+<td>week-of-week-based-year</td>
+<td>number</td>
+<td>27</td>
+</tr>
+<tr>
+<td>W</td>
+<td>week-of-month</td>
+<td>number</td>
+<td>4</td>
+</tr>
+<tr>
+<td>E</td>
+<td>day-of-week</td>
+<td>text</td>
+<td>Tue; Tuesday; T</td>
+</tr>
+<tr>
+<td>e/c</td>
+<td>localized day-of-week</td>
+<td>number/text</td>
+<td>2; 02; Tue; Tuesday; T</td>
+</tr>
+<tr>
+<td>F</td>
+<td>week-of-month</td>
+<td>number</td>
+<td>3</td>
+</tr>
+<tr>
+<td>a</td>
+<td>am-pm-of-day</td>
+<td>text</td>
+<td>PM</td>
+</tr>
+<tr>
+<td>h</td>
+<td>clock-hour-of-am-pm (1-12)</td>
+<td>number</td>
+<td>12</td>
+</tr>
+<tr>
+<td>K</td>
+<td>hour-of-am-pm (0-11)</td>
+<td>number</td>
+<td>0</td>
+</tr>
+<tr>
+<td>k</td>
+<td>clock-hour-of-am-pm (1-24)</td>
+<td>number</td>
+<td>0</td>
+</tr>
+<tr>
+<td>H</td>
+<td>hour-of-day (0-23)</td>
+<td>number</td>
+<td>0</td>
+</tr>
+<tr>
+<td>m</td>
+<td>minute-of-hour</td>
+<td>number</td>
+<td>30</td>
+</tr>
+<tr>
+<td>s</td>
+<td>second-of-minute</td>
+<td>number</td>
+<td>55</td>
+</tr>
+<tr>
+<td>S</td>
+<td>fraction-of-second</td>
+<td>fraction</td>
+<td>978</td>
+</tr>
+<tr>
+<td>A</td>
+<td>milli-of-day</td>
+<td>number</td>
+<td>1234</td>
+</tr>
+<tr>
+<td>n</td>
+<td>nano-of-second</td>
+<td>number</td>
+<td>987654321</td>
+</tr>
+<tr>
+<td>N</td>
+<td>nano-of-day</td>
+<td>number</td>
+<td>1234000000</td>
+</tr>
+<tr>
+<td>V</td>
+<td>time-zone ID</td>
+<td>zone-id</td>
+<td>America/Los_Angeles; Z; -08:30</td>
+</tr>
+<tr>
+<td>z</td>
+<td>time-zone name</td>
+<td>zone-name</td>
+<td>Pacific Standard Time; PST</td>
+</tr>
+<tr>
+<td>O</td>
+<td>localized zone-offset</td>
+<td>offset-O</td>
+<td>GMT+8; GMT+08:00; UTC-08:00;</td>
+</tr>
+<tr>
+<td>X</td>
+<td>zone-offset &apos;Z&apos; for zero</td>
+<td>offset-X</td>
+<td>Z; -08; -0830; -08:30; -083015; -08:30:15;</td>
+</tr>
+<tr>
+<td>x</td>
+<td>zone-offset</td>
+<td>offset-x</td>
+<td>+0000; -08; -0830; -08:30; -083015; -08:30:15;</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>zone-offset</td>
+<td>offset-Z</td>
+<td>+0000; -0800; -08:00;</td>
+</tr>
+<tr>
+<td>p</td>
+<td>pad next</td>
+<td>pad modifier</td>
+<td>1</td>
+</tr>
+<tr>
+<td>&apos;</td>
+<td>escape for text</td>
+<td>delimiter</td>
+</tr>
+<tr>
+<td>&apos;&apos;</td>
+<td>single quote</td>
+<td>literal</td>
+<td>&apos;</td>
+</tr>
+<tr>
+<td>[</td>
+<td>optional section start</td>
+</tr>
+<tr>
+<td>]</td>
+<td>optional section end</td>
+</tr>
+<tr>
+<td>#</td>
+<td>reserved for future use</td>
+</tr>
+<tr>
+<td>{</td>
+<td>reserved for future use</td>
+</tr>
+<tr>
+<td>}</td>
+<td>reserved for future use  </td>
+</tr>
+</tbody>
+</table>
+<p><a href="#top">Top of Section</a></p>
+<p>The count of pattern letters determines the format.<br><strong>Text:</strong> The text style is determined based on the number of pattern letters used. Less than 4 pattern letters will use the short form. Exactly 4 pattern letters will use the full form. Exactly 5 pattern letters will use the narrow form. Pattern letters &apos;L&apos;, &apos;c&apos;, and &apos;q&apos; specify the stand-alone form of the text styles.<br><strong>Number:</strong> If the count of letters is one, then the value is output using the minimum number of digits and without padding. Otherwise, the count of digits is used as the width of the output field, with the value zero-padded as necessary. The following pattern letters have constraints on the count of letters. Only one letter of &apos;c&apos; and &apos;F&apos; can be specified. Up to two letters of &apos;d&apos;, &apos;H&apos;, &apos;h&apos;, &apos;K&apos;, &apos;k&apos;, &apos;m&apos;, and &apos;s&apos; can be specified. Up to three letters of &apos;D&apos; can be specified.<br><strong>Number/Text:</strong> If the count of pattern letters is 3 or greater, use the Text rules above. Otherwise use the Number rules above.<br><strong>Fraction:</strong> Outputs the nano-of-second field as a fraction-of-second. The nano-of-second value has nine digits, thus the count of pattern letters is from 1 to 9. If it is less than 9, then the nano-of-second value is truncated, with only the most significant digits being output.<br><strong>Year:</strong> The count of letters determines the minimum field width below which padding is used. If the count of letters is two, then a reduced two digit form is used. For printing, this outputs the rightmost two digits. For parsing, this will parse using the base value of 2000, resulting in a year within the range 2000 to 2099 inclusive. If the count of letters is less than four (but not two), then the sign is only output for negative years as per SignStyle.NORMAL. Otherwise, the sign is output if the pad width is exceeded, as per SignStyle.EXCEEDS_PAD.<br><strong>ZoneId:</strong> This outputs the time-zone ID, such as &apos;Europe/Paris&apos;. If the count of letters is two, then the time-zone ID is output. Any other count of letters throws IllegalArgumentException.<br><strong>Zone names:</strong> This outputs the display name of the time-zone ID. If the count of letters is one, two or three, then the short name is output. If the count of letters is four, then the full name is output. Five or more letters throws IllegalArgumentException.<br><strong>Offset X and x:</strong> This formats the offset based on the number of pattern letters. One letter outputs just the hour, such as &apos;+01&apos;, unless the minute is non-zero in which case the minute is also output, such as &apos;+0130&apos;. Two letters outputs the hour and minute, without a colon, such as &apos;+0130&apos;. Three letters outputs the hour and minute, with a colon, such as &apos;+01:30&apos;. Four letters outputs the hour and minute and optional second, without a colon, such as &apos;+013015&apos;. Five letters outputs the hour and minute and optional second, with a colon, such as &apos;+01:30:15&apos;. Six or more letters throws IllegalArgumentException. Pattern letter &apos;X&apos; (upper case) will output &apos;Z&apos; when the offset to be output would be zero, whereas pattern letter &apos;x&apos; (lower case) will output &apos;+00&apos;, &apos;+0000&apos;, or &apos;+00:00&apos;.<br><strong>Offset O:</strong> This formats the localized offset based on the number of pattern letters. One letter outputs the short form of the localized offset, which is localized offset text, such as &apos;GMT&apos;, with hour without leading zero, optional 2-digit minute and second if non-zero, and colon, for example &apos;GMT+8&apos;. Four letters outputs the full form, which is localized offset text, such as &apos;GMT, with 2-digit hour and minute field, optional second field if non-zero, and colon, for example &apos;GMT+08:00&apos;. Any other count of letters throws IllegalArgumentException.<br><strong>Offset Z:</strong> This formats the offset based on the number of pattern letters. One, two or three letters outputs the hour and minute, without a colon, such as &apos;+0130&apos;. The output will be &apos;+0000&apos; when the offset is zero. Four letters outputs the full form of localized offset, equivalent to four letters of Offset-O. The output will be the corresponding localized offset text if the offset is zero. Five letters outputs the hour, minute, with optional second if non-zero, with colon. It outputs &apos;Z&apos; if the offset is zero. Six or more letters throws IllegalArgumentException.<br><strong>Optional section:</strong> The optional section markers work exactly like calling DateTimeFormatterBuilder.optionalStart() and DateTimeFormatterBuilder.optionalEnd().<br><strong>Pad modifier:</strong> Modifies the pattern that immediately follows to be padded with spaces. The pad width is determined by the number of pattern letters. This is the same as calling DateTimeFormatterBuilder.padNext(int).<br>For example, &apos;ppH&apos; outputs the hour-of-day padded on the left with spaces to a width of 2.<br>Any unrecognized letter is an error. Any non-letter character, other than &apos;[&apos;, &apos;]&apos;, &apos;{&apos;, &apos;}&apos;, &apos;#&apos; and the single quote will be output directly. Despite this, it is recommended to use single quotes around all characters that you want to output directly to ensure that future changes do not break your application.  </p>
+<p><a href="#top">Top of Section</a></p>
+<h3 id="examples">Examples </h3>
+<h4 id="example_format">Example Formats </h4>
+<p>The following examples show how date and time patterns are interpreted in the U.S. locale. The given date and time are 2001-07-04 12:08:56 local time in the U.S. Pacific Time time zone.</p>
+<table>
+<thead>
+<tr>
+<th>Date and Time Pattern</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>yyyy.MM.dd G &apos;at&apos; HH:mm:ss z</td>
+<td>2001.07.04 AD at 12:08:56 PDT</td>
+</tr>
+<tr>
+<td>EEE, MMM d, &apos;&apos;yy</td>
+<td>Wed, Jul 4, &apos;01</td>
+</tr>
+<tr>
+<td>h:mm a</td>
+<td>12:08 PM</td>
+</tr>
+<tr>
+<td>hh &apos;o&apos;&apos;clock&apos; a, zzzz</td>
+<td>12 o&apos;clock PM, Pacific Daylight Time</td>
+</tr>
+<tr>
+<td>K:mm a, z</td>
+<td>0:08 PM, PDT</td>
+</tr>
+<tr>
+<td>yyyyy.MMMM.dd GGG hh:mm a</td>
+<td>02001.July.04 AD 12:08 PM</td>
+</tr>
+<tr>
+<td>EEE, d MMM yyyy HH:mm:ss Z</td>
+<td>Wed, 4 Jul 2001 12:08:56 -0700</td>
+</tr>
+<tr>
+<td>yyMMddHHmmssZ</td>
+<td>010704120856-0700</td>
+</tr>
+<tr>
+<td>yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSSZ</td>
+<td>2001-07-04T12:08:56.235-0700</td>
+</tr>
+<tr>
+<td>yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSSXXX</td>
+<td>2001-07-04T12:08:56.235-07:00</td>
+</tr>
+<tr>
+<td>YYYY-&apos;Week of Year &apos;w-&apos;Week of Month &apos;W</td>
+<td>2001-Week of Year 27-Week of Month 3</td>
+</tr>
+</tbody>
+</table>
+<h4 id="nlp_cleaner">Special <em>Mapping Cleaner</em> </h4>
+<p>There may be times when several different data formats exist in a <em>Document Set</em> and you wish to standardize them, thus making it easy to put the data into a <em>Target Entity</em>.  You would then be able to sort on it despite the fact that the original source may have been text or in a different format.
+A powerful, but not foolproof, method is to use Natural Language Processing.   There is a rich syntax available for this, but you may be able to take advantage of the <strong>Mapping Cleaner call &apos;NLP Date Detection&apos;</strong>.<br>There are a three simple steps to this.</p>
+<ol>
+<li>Create an <em>Attribute</em> in a <em>Target Entity</em> and you must be sure the type is set to Date or Date/Time and fill in a format that you want to standardize on.</li>
+</ol>
+<p><img src="appendix_datetime/12962a5feba03881cb9421c82cbe2870.png" alt=""></p>
+<ol>
+<li>In a <em>Mapping</em>, use any of the various methods to navigate to a date in your documents.  Below, we used &apos;Anchor Offset&apos; to find the dates in my document and map that to a preformatted Attribute.  The same process was used for the other dates, all of a different original format.</li>
+</ol>
+<p><img src="appendix_datetime/41e227efbce0db4d4f31bbe051584a98.png" alt=""></p>
+<ol>
+<li>Once an <em>Attach</em> has been run, all dates have been harmonized into the same format as seen below.</li>
+</ol>
+<p><img src="appendix_datetime/ea5b470bdf0e552ea23a4dac965877d4.png" alt=""></p>
+<h4 id="example_coding">Example of Advanced Coding </h4>
+<p>Here&#x2019;s some sample code that uses the many tools available in the <em>Platform</em>.
+This will search thru an Excel sheet, find a date and reformat it.
+from com.pendosystems import ExcelHelper
+from java.time.format import DateTimeFormatter
+from java.time import LocalDate</p>
+<p>helper = ExcelHelper(document)
+ws = helper.getWorkBook().getSheet(&#x201C;Master&#x201D;)</p>
+<p>cell = ws.findCellByRegEx(&#x201C;30-Nov-2016&quot;)</p>
+<p>inputFormatter = DateTimeFormatter.ofPattern(&#x201C;d-MMM-yyyy&#x201D;)
+date = LocalDate.parse(cell.getValue(), inputFormatter)
+outputFormatter = DateTimeFormatter.ofPattern(&#x201C;MM/d/yyyy&#x201D;)
+value = outputFormatter.format(date)</p>
+<p>entities.append({&#x201C;colA&#x201D;:value, &#x201C;colB&#x201D;:value})</p>
+<p>Basically, the solution is just use the Java classes, since all the Java classes are available to the python interpreter.  </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="appendix_advanced_data_extraction.html#top" class="navigation navigation-prev " aria-label="Previous page: Appendix - Classification - Advanced Data Extraction Examples">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="appendix_api_naming.html#api-naming" class="navigation navigation-next " aria-label="Next page: Appendix - API Naming">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Appendix - Date and Time Formatting and Parsing Options","level":"1.12","depth":1,"next":{"title":"Appendix - API Naming","level":"1.13","depth":1,"anchor":"#api-naming","path":"appendix_api_naming.md","ref":"appendix_api_naming.md#api-naming","articles":[]},"previous":{"title":"Appendix - Classification - Advanced Data Extraction Examples","level":"1.11","depth":1,"anchor":"#top","path":"appendix_advanced_data_extraction.md","ref":"appendix_advanced_data_extraction.md#top","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.x.x","theme":"default","variables":{},"plugins":["heading-anchors"],"pluginsConfig":{"heading-anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"appendix_date_time.md","mtime":"2017-09-07T14:36:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-08T21:42:46.513Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

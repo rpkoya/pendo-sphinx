@@ -1,0 +1,28 @@
+/* Only keep the 10 most recent builds. */
+def projectProperties = [
+    [$class: 'BuildDiscarderProperty',strategy: [$class: 'LogRotator', numToKeepStr: '5']],
+]
+
+properties(projectProperties)
+
+
+node () {
+
+  stage('Build') {
+    docker.image('billryan/gitbook').inside {
+        slackSend (message: "Building User Manual [${env.BUILD_NUMBER}] (${env.BUILD_URL})")
+        checkout scm
+        sh 'export HOME=/tmp; ls -l; gitbook install'
+        sh 'export HOME=/tmp; ls -l; gitbook build'
+        sh 'export HOME=/tmp; ls -l; gitbook pdf . user-manual-$BRANCH_NAME.pdf'
+        sh 'tar czvf user-manual-$BRANCH_NAME.tgz _book user-manual-$BRANCH_NAME.pdf'
+    }
+  }
+
+  stage('Archive Artifacts') {
+    slackSend (message: "Archiving User Manual [${env.BUILD_NUMBER}] (${env.BUILD_URL})")
+    step([$class: 'ArtifactArchiver', artifacts: 'user-manual-$BRANCH_NAME.tgz', fingerprint: true])
+    deleteDir()
+  }
+
+}
