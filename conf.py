@@ -28,7 +28,7 @@
 # needs_sphinx = '1.0'
 
 pdf_documents = [('index', u'Pendo Systems'),]
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.intersphinx', 'sphinxcontrib.fulltoc']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.intersphinx']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
