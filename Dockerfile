@@ -1,6 +1,3 @@
-FROM pendosystems/docker-runtime-image
+FROM pardahlman/sphinx
 
-RUN mkdir -p /opt/pendosystems/canopy/docs
-COPY target/*.jar /opt/pendosystems/canopy/docs
-
-VOLUME /opt/pendosystems/canopy/docs
+RUN apt-get update -y && apt-get upgrade -y && apt-get install vim -y && pip install sphinxcontrib.fulltoc
