@@ -26,7 +26,8 @@ pipeline{
                 sh""" 
                     ls -lrt
                     pwd
-                    docker run --rm -d --name sphinx-docker -v "${pwd}":/docs -p 90:8000 sphinx-documentation-image 
+                    docker kill sphinx-docker
+                    docker run --rm -d --name sphinx-docker -v "${WORKSPACE}/pendo-docs":/docs -p 90:8000 sphinx-documentation-image 
                     docker exec sphinx-docker make html 
                     ls -lrt 
                 """ 
