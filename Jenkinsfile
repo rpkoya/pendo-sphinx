@@ -1,18 +1,42 @@
-node () {
+pipeline{ 
 
-  stage('Build') {
-    docker.image('pdodds/docker-sphinx').inside('-v /etc/passwd:/etc/passwd -v /var/lib/jenkins/.ssh:/var/lib/jenkins/.ssh') {
-      sshagent (credentials: [ '690e1d4f-a940-425d-b08e-61c65727f865' ]) {
-          slackSend (message: "Building User Manual [${env.BUILD_NUMBER}] (${env.BUILD_URL})")
-          checkout scm
-          sh 'sphinx-versioning build . docs'
-      }
-    }
-  }
-  
-  stage('Copy to EFS') {
-    sh 'mkdir -p /efs/documentation/user-guide/'
-    sh 'cp -r docs/* /efs/documentation/user-guide/'
-    deleteDir()
-  }
-}
+    agent { label 'master' } 
+
+    stages{ 
+
+        stage('Build docker image'){ 
+
+            steps{ 
+              dir('pendo-docs'){
+                 git branch: 'main', url: 'https://github.com/rpkoya/pendo-sphinx.git'
+              }
+                sh"""
+                    ls -lrt
+                    cd pendo-docs
+                    docker build -t sphinx-documentation-image . 
+                """ 
+
+            } 
+
+        } 
+
+        stage('Deploy sphinx container'){ 
+
+            steps{ 
+                sh""" 
+                    ls -lrt
+                    pwd
+                    docker run --rm -d --name sphinx-docker -v "${pwd}":/docs -p 90:8000 sphinx-documentation-image 
+                    docker exec sphinx-docker make html 
+                    ls -lrt 
+                """ 
+
+            } 
+
+        } 
+
+    } 
+
+} 
+
+ 
